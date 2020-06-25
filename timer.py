@@ -12,7 +12,10 @@ root.withdraw()
 messagebox.showinfo("Pomodoro", "\nIt is " + current.strftime("%H:%M") + ".\nTimer set for 25 minutes.")
 
 #please print a number
-e = Entry()
+e = Entry(master)
+e.pack()
+e.delete(0, END)
+e.insert(0, "a default value")
 
 now = dt.datetime.now()
 delta = dt.timedelta(0, 1500)
@@ -27,6 +30,13 @@ while True:
         print()
     else:  #end
         print()
+        for i in range(5):
+            winsound.Beep((i+50), 400)
+        restart = messagebox.askyesno()
+        if restart == True:
+            continue
+        else:
+            break
     print()
-    time.sleep()
-    timewnow = 
+    time.sleep(30)
+    now = dt.datetime.now()
