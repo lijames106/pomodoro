@@ -36,6 +36,7 @@ while True:
         if restart == True:
             continue
         else:
+            messagebox.showinfo("pomodoro Finished!", )
             break
     print()
     time.sleep(30)
