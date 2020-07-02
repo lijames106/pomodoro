@@ -34,6 +34,8 @@ while True:
             winsound.Beep((i+50), 400)
         restart = messagebox.askyesno()
         if restart == True:
+            now = dt.datetime.now()
+            end = now + dt.timedelta(0, total)
             continue
         else:
             messagebox.showinfo("pomodoro Finished!", )
@@ -41,3 +43,4 @@ while True:
     print()
     time.sleep(30)
     now = dt.datetime.now()
+print('\n\nITS OVER YOURE THROUGH\n\n')
