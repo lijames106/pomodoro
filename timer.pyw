@@ -9,7 +9,7 @@ import winsound
 
 root = tk.Tk()
 root.withdraw()
-messagebox.showinfo("Pomodoro", "\nIt is " + current.strftime("%H:%M") + ".\nTimer set for 25 minutes.")
+
 
 #please print a number
 #e = Entry(master)
@@ -22,6 +22,8 @@ delta = dt.timedelta(0, 1500)
 breaktime = now + delta
 total = 30*60
 end = now + dt.timedelta(0, total)#change to total to customize
+
+messagebox.showinfo("Pomodoro", "\nIt is " + current.strftime("%H:%M") + ".\nTimer set for 25 minutes.")
 
 while True:
     #loop until time passes
