@@ -1,13 +1,15 @@
+
 #python program to display timer and have button to start
 #25 min timer + 5 min break, can write what the timer is for and adjust time length
 
 import time
 import datetime as dt
-import tkinter as tk
+import tkinter
 from tkinter import messagebox
+from tkinter import simpledialog
 import winsound
 
-root = tk.Tk()
+root = tkinter.Tk()
 root.withdraw()
 
 
@@ -21,7 +23,7 @@ now = dt.datetime.now()
 delta = dt.timedelta(0, 1500)
 breaktime = now + delta
 total = 30*60
-end = now + dt.timedelta(0, total)#change to total to customize
+#end = now + dt.timedelta(0, total)#change to total to customize
 
 messagebox.showinfo("Pomodoro", "\nIt is " + current.strftime("%H:%M") + ".\nTimer set for 25 minutes.")
 
