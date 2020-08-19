@@ -7,6 +7,16 @@ import tkinter as tk
 from tkinter import messagebox
 import winsound
 
+#might need to edit a bit
+
+
+#a few lines could be deleted
+
+
+#added too
+#need to work on customization
+
+
 root = tk.Tk()
 root.withdraw()
 messagebox.showinfo("Pomodoro", "\nIt is " + current.strftime("%H:%M") + ".\nTimer set for 25 minutes.")
