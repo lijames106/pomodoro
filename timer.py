@@ -8,13 +8,10 @@ from tkinter import messagebox
 import winsound
 
 #might need to edit a bit
-
-
 #a few lines could be deleted
-
-
 #added too
 #need to work on customization
+#get it working soon
 
 
 root = tk.Tk()
@@ -22,10 +19,10 @@ root.withdraw()
 messagebox.showinfo("Pomodoro", "\nIt is " + current.strftime("%H:%M") + ".\nTimer set for 25 minutes.")
 
 #please print a number
-#e = Entry(master)
-#e.pack()
-#e.delete(0, END)
-#e.insert(0, "a default value")
+e = Entry(master)
+e.pack()
+e.delete(0, END)
+e.insert(0, "a default value")
 
 now = dt.datetime.now()
 delta = dt.timedelta(0, 1500)
