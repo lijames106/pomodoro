@@ -12,6 +12,7 @@ import winsound
 #added too
 #need to work on customization
 #get it working soon
+#prgoess?
 
 
 root = tk.Tk()
